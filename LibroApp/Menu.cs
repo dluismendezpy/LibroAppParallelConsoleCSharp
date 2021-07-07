@@ -24,25 +24,25 @@ namespace LibroApp
             {
                 case 1:
                     Console.Clear();
-                    
+                    autor.AgregarAutor();
                     break;
                 case 2:
                     Console.Clear();
-                    
+                    autor.EditarAutores();
                     break;
                 case 3:
                     Console.Clear();
-                    
+                    autor.EliminarAutores();
                     break;
                 case 4:
                     Console.Clear();
-                    
+                    autor.ListarAutores();
                     break;
                 case 5:
                     Console.Clear();
                     Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
                     Console.ReadKey();
-                    
+                    Menu.MantenimientoAutores();
                     break;
             }
         }
