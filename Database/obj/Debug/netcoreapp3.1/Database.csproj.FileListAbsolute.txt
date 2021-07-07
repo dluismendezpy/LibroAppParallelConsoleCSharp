@@ -1,0 +1,12 @@
+C:\Users\luis_\source\repos\LibroApp\Database\bin\Debug\netcoreapp3.1\Database.deps.json
+C:\Users\luis_\source\repos\LibroApp\Database\bin\Debug\netcoreapp3.1\Database.runtimeconfig.json
+C:\Users\luis_\source\repos\LibroApp\Database\bin\Debug\netcoreapp3.1\Database.runtimeconfig.dev.json
+C:\Users\luis_\source\repos\LibroApp\Database\bin\Debug\netcoreapp3.1\Database.dll
+C:\Users\luis_\source\repos\LibroApp\Database\bin\Debug\netcoreapp3.1\Database.pdb
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.csproj.AssemblyReference.cache
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfoInputs.cache
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.AssemblyInfo.cs
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.csproj.CoreCompileInputs.cache
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.dll
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.pdb
+C:\Users\luis_\source\repos\LibroApp\Database\obj\Debug\netcoreapp3.1\Database.genruntimeconfig.cache

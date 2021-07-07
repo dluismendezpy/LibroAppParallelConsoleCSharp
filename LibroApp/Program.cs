@@ -20,6 +20,7 @@ namespace LibroApp
             {
                 case 1:
                     Console.Clear();
+                    Menu.MantenimientoAutores();
                     break;
                 case 2:
                     Console.Clear();
