@@ -11,6 +11,7 @@ namespace LibroApp
         private static Categoria categoria = new Categoria();
         private static Editorial editorial = new Editorial();
         private static Libro libro = new Libro();
+        private static BusquedaLibro busquedaLibro = new BusquedaLibro();
 
         public static void MantenimientoAutores()
         {
@@ -160,6 +161,40 @@ namespace LibroApp
                     libro.ListarLibros();
                     break;
                 case 5:
+                    Console.Clear();
+                    Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
+                    Console.ReadKey();
+                    Menu.MantenimientoLibros();
+                    break;
+            }
+        }
+
+        public static void BusquedaLibros()
+        {
+            Console.WriteLine("LIBRO APP - BUSQUEDA" +
+                              "\n\nIntroduce el numero de la opcion deseada... " +
+                              "\n\n1. Busqueda por nombre del libro" +
+                              "\n2. Búsqueda por nombre del autor" +
+                              "\n3. Búsqueda por nombre del editorial" +
+                              "\n4. Volver atras");
+
+            int opcLibroBusqueda = int.Parse(Console.ReadLine());
+
+            switch (opcLibroBusqueda)
+            {
+                case 1:
+                    Console.Clear();
+                    busquedaLibro.BusquedaPorNombreDelLibro();
+                    break;
+                case 2:
+                    Console.Clear();
+                    busquedaLibro.BusquedaPorNombreDelAutor();
+                    break;
+                case 3:
+                    Console.Clear();
+                    busquedaLibro.BusquedaPorNombreDelEditorial();
+                    break;
+                case 4:
                     Console.Clear();
                     Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
                     Console.ReadKey();
