@@ -6,8 +6,10 @@ namespace LibroApp
 {
     public class Menu
     {
+        // Objetos
         private static Autor autor = new Autor();
         private static Categoria categoria = new Categoria();
+        private static Editorial editorial = new Editorial();
 
         public static void MantenimientoAutores()
         {
@@ -83,6 +85,45 @@ namespace LibroApp
                     Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
                     Console.ReadKey();
                     Menu.MantenimientoCategorias();
+                    break;
+            }
+        }
+        
+        public static void MantenimientoEditoriales()
+        {
+            Console.WriteLine("LIBRO APP - EDITORIALES" +
+                              "\n\nIntroduce el numero de la opcion deseada... " +
+                              "\n\n1. Agregar editorial" +
+                              "\n2. Editar editorial" +
+                              "\n3. Eliminar editorial" +
+                              "\n4. Listar editoriales" +
+                              "\n5. Volver atras");
+
+            int opcEditorial = int.Parse(Console.ReadLine());
+
+            switch (opcEditorial)
+            {
+                case 1:
+                    Console.Clear();
+                    editorial.AgregarEditorial();
+                    break;
+                case 2:
+                    Console.Clear();
+                    editorial.EditarEditoriales();
+                    break;
+                case 3:
+                    Console.Clear();
+                    editorial.EliminarEditoriales();
+                    break;
+                case 4:
+                    Console.Clear();
+                    editorial.ListarEditoriales();
+                    break;
+                case 5:
+                    Console.Clear();
+                    Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
+                    Console.ReadKey();
+                    Menu.MantenimientoEditoriales();
                     break;
             }
         }
