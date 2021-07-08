@@ -32,6 +32,7 @@ namespace LibroApp
                     break;
                 case 4:
                     Console.Clear();
+                    Menu.MantenimientoLibros();
                     break;
                 case 5:
                     Console.Clear();

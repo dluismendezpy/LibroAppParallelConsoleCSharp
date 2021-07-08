@@ -10,6 +10,7 @@ namespace LibroApp
         private static Autor autor = new Autor();
         private static Categoria categoria = new Categoria();
         private static Editorial editorial = new Editorial();
+        private static Libro libro = new Libro();
 
         public static void MantenimientoAutores()
         {
@@ -127,5 +128,45 @@ namespace LibroApp
                     break;
             }
         }
+    
+        public static void MantenimientoLibros()
+        {
+            Console.WriteLine("LIBRO APP - LIBROS" +
+                              "\n\nIntroduce el numero de la opcion deseada... " +
+                              "\n\n1. Agregar libro" +
+                              "\n2. Editar libro" +
+                              "\n3. Eliminar libro" +
+                              "\n4. Listar libros" +
+                              "\n5. Volver atras");
+
+            int opcLibro = int.Parse(Console.ReadLine());
+
+            switch (opcLibro)
+            {
+                case 1:
+                    Console.Clear();
+                    libro.AgregarLibro();
+                    break;
+                case 2:
+                    Console.Clear();
+                    libro.EditarLibros();
+                    break;
+                case 3:
+                    Console.Clear();
+                    libro.EliminarLibros();
+                    break;
+                case 4:
+                    Console.Clear();
+                    libro.ListarLibros();
+                    break;
+                case 5:
+                    Console.Clear();
+                    Console.WriteLine("Adios, espero que vuelvas pronto. Presiona cualquier tecla para volver...");
+                    Console.ReadKey();
+                    Menu.MantenimientoLibros();
+                    break;
+            }
+        }
+
     }
 }
